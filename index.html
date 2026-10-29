@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDERING SYSTEM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="menu-container">
+            <h1>Dacayo's Store</h1>
+
+            <article class="menu">
+                <div class="products">
+                    <label for="">Product Name:</label><br>
+                    <select name="products" id="products">
+                        <option value="">Select</option>
+                        <option value="Pancit Canton">Pancit Canton</option>
+                        <option value="Century Tuna">Century Tuna</option>
+                        <option value="San Marino">San Marino</option>
+                        <option value="555 Sardines">555 Sardines</option>
+                    </select>
+
+                    <div class="discount">
+                        <label for="discount">Discount:</label><br>
+                        <select id="discount">
+                            <option value="0">None</option>
+                            <option value="20">Senior Citizen / PWD (20%)</option>
+                            <option value="10">Promo (10%)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label><br>
+                    <input type="number" name="productQuantity" id="productQuantity" min="0">
+                </div>
+            </article>
+
+            <br>
+            <h2>Price List</h2>
+            <div class="priceList-container">
+                <div class="productList-container">
+                    <div class="productList">
+                        <p>Pancit Canton</p>
+                        <p class="price">&#8369; 24.99</p>
+                    </div>
+                    <div class="productList">
+                        <p>Century Tuna</p>
+                        <p class="price">&#8369; 44.99</p>
+                    </div>
+                    <div class="productList">
+                        <p>San Marino</p>
+                        <p class="price">&#8369; 49.99</p>
+                    </div>
+                    <div class="productList">
+                        <p>555 Sardines</p>
+                        <p class="price">&#8369; 34.99</p>
+                    </div>
+                </div>
+
+                <div class="productList-container">
+                   <div class="productList">
+                        
+                    </div>
+                    <div class="productList">
+                        
+                    </div>
+                    <div class="productList">
+                        
+                    </div>
+                    <div class="productList">
+                        
+                    </div>
+                </div>
+
+                <div class="productList-container">
+                    <div class="productList">
+                        
+                    </div>
+                    <div class="productList">
+                        
+                    </div>
+                    <div class="productList">
+                        
+                    </div>
+                    <div class="productList">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="receipt-container">
+            <h1>Receipt</h1>
+            <p id="receiptDate" class="receipt-date"></p>
+            <hr>
+            <div id="receiptItems"></div>
+            <hr>
+            <div class="receipt-row">
+                <span>Subtotal</span>
+                <span id="receiptSubtotal">&#8369; 0.00</span>
+            </div>
+            <div class="receipt-row">
+                <span id="discountLabel">Discount</span>
+                <span id="receiptDiscount">- &#8369; 0.00</span>
+            </div>
+            <div class="receipt-row receipt-total">
+                <span>Total</span>
+                <span id="receiptTotal">&#8369; 0.00</span>
+            </div>
+        </div>
+</div>
+    
+<script src="script.js"></script>
+</body>
+</html>

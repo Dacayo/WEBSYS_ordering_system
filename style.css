@@ -1,0 +1,197 @@
+* {
+    font-family: Bricolage Grotesque;
+}
+
+body {
+    background-color: #0f1c41;
+    height: 98vh;
+}
+
+h2{
+    margin-top: 70px;
+    color: rgb(221, 210, 210);
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.menu-container{
+    background-color: #2e3f6d;
+    width: 80%;
+    height: 95%;
+    margin-left: 30px;
+    margin-right: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+    .menu-container > h1 {
+        font-family: Bricolage Grotesque;
+        color: whitesmoke;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .menu-container > label {
+        color: rgb(221, 210, 210);
+        font-size: 18px;
+        margin-left: 50px;
+    }
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+    height: 80px;
+    margin-top: 80px;
+}
+
+.products {
+    width: 85%;
+}
+
+    .products > label {
+        color: rgb(221, 210, 210);
+        font-size: 18px;
+        margin-left: 50px;
+    }
+
+    .products > select {
+        margin-top: 10px;
+        margin-left: 40px;
+        width: 80%;
+        height: 50px;
+        padding: 10px;
+    }
+
+.quantity {
+    width: 10%;
+    margin-top: -95px;
+}
+
+    .quantity > label {
+        color: rgb(221, 210, 210);
+        font-size: 18px;
+        margin-left: 50px;
+    } 
+
+    .quantity > input {
+        margin-top: 10px;
+        font-size: 20px;
+        height: 30px;
+        margin-left: 50px;
+        padding: 10px;
+        width: 100px;
+    }
+
+.receipt-container{
+    background-color: rgb(248, 240, 225);
+    width: 27%;
+    height: 95%;
+    margin-left: 100px;
+    margin-right: 50px;
+    box-shadow: 0 10px 15px
+            rgba(0,0,0,0.2);
+}
+    .receipt-container h1 {
+        font-family: Bricolage Grotesque;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 24px;
+    }
+
+.priceList-container {
+    margin-top: 0px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productList-container {
+    width: 95%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productList {
+    background-color: #3653a3;
+    width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+
+.price {
+    color: rgb(221, 210, 210);       
+}
+
+.receipt-container {
+    padding: 0 20px;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.receipt-container * {
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.receipt-container h1 {
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.receipt-date {
+    text-align: center;
+    color: #6b6552;
+    font-size: 13px;
+}
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dotted #c9bfa6;
+    font-size: 14px;
+}
+
+.receipt-row small {
+    color: #6b6552;
+}
+
+.receipt-total {
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: none;
+}
+
+.discount {
+    margin-top: 10px;
+}
+
+.discount > label {
+    color: rgb(221, 210, 210);
+    font-size: 18px;
+    margin-left: 50px;
+}
+
+.discount > select {
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 40%;
+    height: 50px;
+    padding: 10px;
+}
